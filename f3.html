@@ -1,0 +1,23 @@
+<body>
+    <div id="root"></div>
+    <!-- You can import react directly on your html document via unpkg -->
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <script type="text/babel">
+        // write your script here!
+        //Using JSX
+        const divToAdd = 
+            <div className='container'>
+                <span>Hello</span>
+                <span>World</span>
+            </div>;
+
+        //using React
+        const span1 = React.createElement('span', null, 'Hello');
+        const span2 = React.createElement('span', null, 'World');
+        const divToAdd2 = React.createElement('div',{className: 'container'},[span1,' ',span2])
+        
+        ReactDOM.render(divToAdd2,document.getElementById('root'));
+    </script>
+</body>
