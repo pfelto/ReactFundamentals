@@ -1,0 +1,14 @@
+<body>
+    <!-- html elements can already exist before running your code -->
+    <div id="root"></div>
+    <script type="module">
+        // write your javascript code here,
+        // this is below all the existing html nodes
+        const node = document.getElementById("root")
+        const divToAdd = document.createElement('div');
+        divToAdd.classList.add('container');
+        // or divToAdd.className = 'container'
+        divToAdd.textContent = 'Hello World';
+        node.append(divToAdd);
+    </script>
+</body>

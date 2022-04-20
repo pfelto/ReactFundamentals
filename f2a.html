@@ -1,0 +1,14 @@
+<body>
+    <div id="root"></div>
+    <!-- You can import react directly on your html document via unpkg -->
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <script type="text/babel">
+        // write your script here!
+        const node = document.getElementById('root');
+        const divToAdd = <div className='container'>Hello World</div>
+        //ReactDOm.render is what to add and then where to add it to.
+        ReactDOM.render(divToAdd, node);
+    </script>
+</body>
